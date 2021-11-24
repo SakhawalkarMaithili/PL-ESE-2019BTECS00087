@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Walchand College of Engineering, Sangli</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="topnav" id="dropdownClick">
+        <img style="float: right;" src="Logo2.png">
+        <li><a href="#">Home</a></li>
+        <li><a href="faculty_registration.html">Faculty Registration</a></li>
+        <li><a href="#leave.html">Leave form</a></li>
+
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li> 
+    </nav>
+
+    <!-- header -->
+    <header style="text-align: center;">
+        <h1><u>Walchand College of Engineering, Sangli</u></h1>
+        <h4>(An autonomous institute)</h4>
+    </header>
+    
+    <article>
+        Walchand College of Engineering is situated midway between Sangli and Miraj cities at Vishrambag, Sangli. The WCE campus is located on about 90 acres of land on southern side of Sangli – Miraj road.
+
+        <br><br>
+
+        In 1947, the college made a modest beginning as New Engineering College, with a single program leading to B.E. (Civil) degree. In the year 1955, the College was renamed as Walchand College of Engineering as part of the new arrangements and pursuant to the Rehabilitation and Development Program mainly funded by Seth Walchand Hirachand Memorial Trust and the Government. The Government appointed an Ad Hoc Committee for conducting the college from May 1955, later replaced by the Administrative Council in 1956. The Ad Hoc Committee added two more degree programs in B.E. (Mechanical) and B.E. (Electrical) in 1955 with the intake of 20 each. Three Diploma programs also started in 1955 – Civil (40 intake), Mechanical (20) and Electrical (20).
+
+        <br><br>
+               
+        Post Graduate programs in Civil, Mechanical and Electrical Engineering and Diploma program in Industrial Electronics were introduced in 1971. In 1986 the UG and PG programs in Electronics Engineering and UG program in Computer Science and Engineering were introduced. 
+
+        <br><br>
+               
+        An additional intake of 30 students was also sanctioned for Computer Science & Engineering program, resulting in total intake of 390 students for all branches at UG level and 106 at PG level. As part of strategic planning, PG section is being strengthened and PG intake has now steadily risen to 240 across 10 programs. The College has a QIP scheme for full-time doctoral programs and also offers Ph. D. programs of Shivaji University in various branches of engineering.
+    </article>
+
+    <article>
+        <u><strong>VISION</strong></u>
+        <br><br>
+        To produce capable graduate engineers with an aptitude for research and leadership
+    </article>
+    
+    <article>
+        <u><strong>OBJECTIVES</strong></u>
+            <br><br>
+            Achieve excellence in learning and research through continual improvement in both content and delivery of the academic programmes.
+            <br>
+            Promote close interaction among industry, faculty and students to enrich the learning process and enhance career opportunities for students.
+            <br>
+            Develop state - of - the - art laboratories and other infrastructure commensurate with the need of delivering quality education and research services.
+            <br>
+            Strngthen the Institution through network of alumni and optimize use of resources by leveraging inter - departmental capabilities.
+            <br>
+            Provide opportunities and ensure regular skill. Up - gradation of faculty and staff through structured training programmes.
+    </article>
+
+    <h2 style="text-align: center;">Gallery</h2>
+    <section style="display: block; margin: auto;">
+        <img class="image" src="http://www.walchandsangli.ac.in/images/library_sideview.jpg" height="267px">
+        <img class="image" src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/2600/2018/5/24/Walchand-College-of-Engineering-Sangli2.jpg">
+        <img class="image" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUckKOt4L2bf2hgAkkYnNPthOJwrhV76zRg&usqp=CAU">
+    </section>
+
+
+    <footer style="background-color: rgb(73, 73, 73); color: #fff; padding: 1%; text-align: center;">
+        For more information, visit our <a href="http://www.walchandsangli.ac.in/" style="color: #fff;">Official Page</a>
+    </footer>
+
+
+    <!-- navbar javascript -->
+    <script>
+            
+        function dropdownMenu ()
+        {
+            var x = document.getElementById ("dropdownClick");               //document accesses the html document
+
+            if (x.className === "topnav")                                    //"==" is equal to; "===" equal value and equal type
+                x.className += " responsive";                                  //change topnav to "topnav.responsive"
+            else                                                            //if dropdown menu is already activated and the class name is already topnav.responsive, we need to change it back to just topnav on another click of icon
+                x.className = "topnav";
+        }
+
+    </script>
+</body>
+</html>

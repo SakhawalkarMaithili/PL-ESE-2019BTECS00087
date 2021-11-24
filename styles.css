@@ -1,0 +1,111 @@
+nav 
+{
+    background-color: rgb(52, 51, 54);
+    overflow: hidden;               
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+
+
+.topnav li               
+{
+    list-style: none;           
+    float: left;                
+}
+
+
+
+
+.topnav li a
+{
+    display: block;
+    text-decoration: none;             
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+
+.topnav li a:hover                    /*to highlight a link when our arrow is on it*/
+{
+    background-color: rgb(164, 207, 243);
+    color: black;
+}
+
+
+
+.topnav li.dropdownIcon
+{
+    display: none;                    
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+article
+{
+    padding: 1%; 
+    font-size: 15px; 
+    background-color: rgb(164, 207, 243); 
+    border-radius: 10px;
+    margin: 1%;;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.image
+{
+    width: 30%;
+    margin: 1%;
+}
+
+
+@media screen and (max-width: 680px)                                    /*@media screen -----> detects the screen*/    /*680px ---> optimal solution*/
+{
+    .topnav li:not(:nth-child(1))                                     /*Here, we want to hide all the navigation links EXCEPT HOME (1st link). So, we use not operator*/
+    {
+        display: none;
+    }
+
+    .topnav li.dropdownIcon
+    {
+        display:block;
+        float: right;
+    }
+
+    .topnav.responsive  li.dropdownIcon
+    {
+        position: absolute;                                         /*to make sure the icon stays in place even after the dropdown menu is activated*/
+        top:0;
+        right: 50%;
+    }
+
+    .topnav.responsive 
+    {
+        position: relative;
+    }
+
+
+    .topnav.responsive li
+    {
+        display: inline;
+        float: none;                /*initially, the elements float to left. However, we do not need them to float left in mobile view. So, float property is overwritten*/
+    }
+
+
+    .topnav.responsive li a
+    {
+        display: block;
+        text-align: left;
+    }
+
+
+    .image
+    {
+        width: 100%;
+    }
+}
