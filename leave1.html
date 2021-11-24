@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Leave</title>
+</head>
+<body>
+        <!-- Navbar -->
+        <nav class="topnav" id="dropdownClick">
+            <img style="float: right;" src="Logo2.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Faculty Registration</a></li>
+            <li><a href="leave.html">Leave form</a></li>
+    
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li> 
+        </nav>
+    
+    <br>
+    <br>
+    <br>
+        <section class="section1">
+            
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Submit your leave application</h2>
+                </div>
+           
+            <div>
+                <form class="form" id="form">
+                    <div class="form-item " >
+                        <label>Date</label>
+                        <input type="date" id="reason">
+                    </div>
+
+                    <div class="form-item " >
+                        <label>Reason</label>
+                        <input type="text" id="reason">
+                    </div>
+                    
+                    <div class="form-item " >
+                        <label>Department</label>
+                        <input type="text" id="dept">
+                    </div>
+
+                    <div class="form-item " >
+                        <label>Replacement Faculty</label>
+                        <input type="text" id="Replacement">
+                    </div>
+
+                    <div class="form-item " >
+                        <label>Approver</label>
+                        <input type="text" id="Approver">
+                    </div>
+                   
+                    <button type="submit" onclick="myFunction()">Submit</button>
+                </form>
+                </div>
+            </div>
+
+
+            
+        <script>
+            function myFunction() {
+              alert("Leave application submitted");
+            }
+            </script>
+</body>
+</html>
